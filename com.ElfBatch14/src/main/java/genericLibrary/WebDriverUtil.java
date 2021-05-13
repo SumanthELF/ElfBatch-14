@@ -20,18 +20,16 @@ public class WebDriverUtil {
 				break;
 			}
 		}
-		
 	}
-	public void switchToASpecificWindow(WebElement ele) {
+	public void switchToASpecificWindow(WebElement element) {
 		String parent=driver.getWindowHandle();
 		Set<String> allWid=driver.getWindowHandles();
 		allWid.remove(parent);
 		for(String sessionID:allWid){
 			driver.switchTo().window(sessionID);
-			if(ele.isDisplayed()){
+			if(element.isDisplayed()){
 				break;
 			}
 		}
-		
 	}
 }
