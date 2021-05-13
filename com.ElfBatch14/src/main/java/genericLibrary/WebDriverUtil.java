@@ -10,7 +10,7 @@ public class WebDriverUtil {
 	public WebDriverUtil(WebDriver driver) {
 		this.driver=driver;
 	}
-	public void passDriverControll(String title) {
+	public void switchToASpecificTitledWindow(String title) {
 		String parent=driver.getWindowHandle();
 		Set<String> allWid=driver.getWindowHandles();
 		allWid.remove(parent);
@@ -22,7 +22,7 @@ public class WebDriverUtil {
 		}
 		
 	}
-	public void passDriverControll(WebElement ele) {
+	public void switchToASpecificWindow(WebElement ele) {
 		String parent=driver.getWindowHandle();
 		Set<String> allWid=driver.getWindowHandles();
 		allWid.remove(parent);
