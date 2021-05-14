@@ -2,10 +2,10 @@ package genericLibrary;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
+
 /*
  * DevikaPatel
  */
-
 public class IRetryAnalyserImplementation implements IRetryAnalyzer {
 
 	int count=0;
