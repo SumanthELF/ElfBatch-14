@@ -12,7 +12,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
  * @author CHETHAN KUMAR M N
  *
  */
-public class ExcelUtils {
+public class ExcelUtil {
 	public double numericCellvalue(String path,String sheet,int row,int cell) throws Exception
 	{
 		File abspath=new File(path);

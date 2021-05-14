@@ -1,10 +1,10 @@
-package GenericLibrary;
+package genericLibrary;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class ActionsLib {
+public class ActionsUtil {
 	
 	public WebDriver driver;
 	public Actions actions= new Actions(driver);
