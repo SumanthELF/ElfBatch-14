@@ -15,7 +15,12 @@ public class HomePage {
 		PageFactory.initElements(driver,this);
 		this.driver=driver;
 	}
+	@FindBy(linkText="Leads")
+	private WebElement LeadsTab;
 
+	public WebElement getLeadsTab() {
+		return LeadsTab;
+	}
 	@FindBy(xpath="//a[text()='Contacts']")
 			private WebElement Contacts;
 
