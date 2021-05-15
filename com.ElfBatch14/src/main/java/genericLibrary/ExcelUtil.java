@@ -21,6 +21,14 @@ public class ExcelUtil {
 		double data = workbook.getSheet(sheet).getRow(row).getCell(cell).getNumericCellValue();
 		return data;
 	}
+	public int numericCellvalue1(String path,String sheet,int row,int cell) throws Exception
+	{
+		File abspath=new File(path);
+		FileInputStream fis=new FileInputStream(abspath);
+		Workbook workbook=WorkbookFactory.create(fis);
+		int data = (int)workbook.getSheet(sheet).getRow(row).getCell(cell).getNumericCellValue();
+		return data;
+	}
 	public String stringCellValue(String path,String sheet,int row,int cell) throws Exception
 	{
 		File abspath=new File(path);

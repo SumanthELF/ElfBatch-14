@@ -13,7 +13,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-import genericLibrary.ExcelUtil;
+import genericLibrary.SelectUtil;
+import pomRepository.LeadsPage;
 import pomRepository.ContactPage;
 import pomRepository.CreateNewContactPage;
 import pomRepository.HomePage;
@@ -28,9 +29,11 @@ public class BaseTest implements IAutoConstants {
 	public HomePage homepage;
 	public ContactPage contactpage;
 	public CreateNewContactPage createnewcontactpage;
+	public LeadsPage leads;
 	public PropertyFileUtil data;
 	public ExcelUtil excel;
 	public WebDriverUtil webUtil;
+	public SelectUtil select;
 	public String parent;
 
 	@Parameters("browser")
