@@ -1,17 +1,18 @@
 package genericLibrary;
 
 public interface  IAutoConstants {
-	String CHROME_KEY="WebDriver.chrome.driver";
-	String CHROME_PATH="./drivers/chromedriver.exe";
+	String CHROME_KEY="webdriver.chrome.driver";
+	String CHROME_PATH="./src/main/resources/chromedriver.exe";
 	
-	String FIREFOX_KEY="";
-	String FIREFOX_PATH="";
+	String FIREFOX_KEY="webdriver.gecko.driver";
+	String FIREFOX_PATH="./src/main/resources/geckodriver.exe";
 	
-	String excel_PATH="";
-	String PROPERTYFILE_PATH="";
-	String SCREENSHOT_PATH="";
+	String EXCEL_PATH="./src/test/resources/testData.xlsx";
+	String PROPERTIES_PATH="./src/test/resources/data.properties";
+	String SCREENSHOT_PATH="./errorshots";
 	
-	int EXPLICIT_TIMEOUT=10;
-	int IMPLICIT_TIMEOUT=10;
+	String DEFAULT_USERNAME="admin";
+	String DEFAULT_PASSWORD="root";
+	String DEFAULT_URL="http://localhost:8888/";
 
 }
