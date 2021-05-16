@@ -43,6 +43,13 @@ public class HomePage {
 		return Signout;
 	}
 	
+	@FindBy(xpath="//a[text()='Products']")
+	private WebElement  products;
+	
+	public WebElement getProducts() {
+		return products;
+	}
+
 	public void logout(){
 	Actions actions=new Actions(driver);
 	actions.moveToElement(Administrator).perform();
