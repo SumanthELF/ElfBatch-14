@@ -14,7 +14,6 @@ public class CreateNewContactPage {
 	public CreateNewContactPage(WebDriver driver){
 		PageFactory.initElements(driver, this);
 		this.driver=driver;
-
 	}
 
 	@FindBy(name="button")
@@ -36,6 +35,13 @@ public class CreateNewContactPage {
 
 	public WebElement getPlusbutton() {
 		return plusbutton;
+	}
+	
+	@FindBy(xpath="//td[text()='Contacts >> Export ']")
+	private WebElement ContactExport;
+	
+	public WebElement getContactExport() {
+		return ContactExport;
 	}
 	
 	@FindBy(xpath="//a[text()='vtiger']")
@@ -65,6 +71,13 @@ public class CreateNewContactPage {
 	public WebElement getFirstname() {
 		return firstname;
 	}
+	
+	@FindBy(name="leadsource")
+	private WebElement leadSourceDropDown;
+	
+	public WebElement getLeadSourceDropDown() {
+		return leadSourceDropDown;
+	}
 
 	@FindBy(id="mouseArea_Last Name")
 	private WebElement createdContact;
@@ -72,7 +85,6 @@ public class CreateNewContactPage {
 	public WebElement getCreatedContact() {
 		return createdContact;
 	}
-
 
 	@FindBy(xpath="//input[@name='imagename']")
 	private WebElement choosefile;
@@ -87,12 +99,26 @@ public class CreateNewContactPage {
 	public WebElement getImportContact() {
 		return importContact;
 	}
+	
+	@FindBy(xpath="//img[@title='Export Contacts']")
+	private WebElement ExportContact;
+	
+	public WebElement getExportContact() {
+		return ExportContact;
+	}
 
 	@FindBy(xpath="//img[@src='themes/softed/images/select.gif' and contains(@onclick,'select')]")
 	private WebElement reportButton;
 
 	public WebElement getReportButton() {
 		return reportButton;
+	}
+	
+	@FindBy(xpath="(//input[@title='Clear'])[2]")
+	private WebElement reportClearButton;
+
+	public WebElement getReportClearButton() {
+		return reportClearButton;	
 	}
 
 	@FindBy(xpath="//a[text()='devika patel']")
@@ -108,6 +134,13 @@ public class CreateNewContactPage {
 	public WebElement getContactSubtitle() {
 		return contactSubtitle;
 	}
+	
+	@FindBy(xpath="//input[@value='U']")
+	private WebElement userRadioButton;
+	
+	public WebElement getUserRadioButton() {
+		return userRadioButton;
+	}
 
 	@FindBy(xpath="//input[@value='T']")
 	private WebElement assigntyperadiobutton;
@@ -121,6 +154,13 @@ public class CreateNewContactPage {
 
 	public WebElement getContactNewPageTitle() {
 		return ContactNewPageTitle;
+	}
+	
+	@FindBy(name="assigned_user_id")
+	private WebElement userDropDown;
+	
+	public WebElement getUserDropDown() {
+		return userDropDown;
 	}
 
 	@FindBy(xpath="//select[@name='assigned_group_id']")
@@ -136,6 +176,13 @@ public class CreateNewContactPage {
 	public WebElement getImportchoosefile() {
 		return importchoosefile;
 	}
+	
+	@FindBy(xpath="(//a[text()=' piyush'])[3]")
+	private WebElement selectContact;
+
+	public WebElement getSelectContact() {
+		return selectContact;
+	}
 
 	@FindBy(xpath="//option[text()='Support Group']")
 	private WebElement supportgroup;
@@ -143,4 +190,13 @@ public class CreateNewContactPage {
 	public WebElement getSupportgroup() {
 		return supportgroup;
 	}
+	
+	@FindBy(xpath="//td[@class='moduleName']")
+	private WebElement searchBasicMode;
+	
+	public WebElement getSearchBasicMode() {
+		 return searchBasicMode;
+	}
+	
+	
 }
