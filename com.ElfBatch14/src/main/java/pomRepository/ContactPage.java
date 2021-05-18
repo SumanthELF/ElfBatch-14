@@ -66,4 +66,12 @@ public class ContactPage {
 	public WebElement getDeletebutton() {
 		return deletebutton;
 	}
+	
+	@FindBy(xpath="//span[@class='lvtHeaderText']")
+	private WebElement ContactInformation;
+	
+	public WebElement getContactInformation() {
+		return ContactInformation;
+		
+	}
 }

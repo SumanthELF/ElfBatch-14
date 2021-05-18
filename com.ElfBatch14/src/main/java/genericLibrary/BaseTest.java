@@ -33,6 +33,7 @@ public class BaseTest implements IAutoConstants {
 	public ExcelUtil excel;
 	public WebDriverUtil webUtil;
 	public SelectUtil select;
+	public ActionsUtil actions;
 	public String parent;
 
 	@Parameters("browser")
