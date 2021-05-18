@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Chrome is launching successfully]]>
+    </line>
+    <line>
+      <![CDATA[Window is maximized successfully]]>
+    </line>
+    <line>
+      <![CDATA[Login page is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Homepage is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[user is logged out successfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-05-17T19:44:00 IST" name="Default suite" finished-at="2021-05-17T19:45:38 IST" duration-ms="97853">
+    <groups>
+      <group name="smoke">
+        <method signature="TC_001Test.createNewLeadBySelectingDifferrentLeadSourceFromDropDown()[pri:0, instance:leads.TC_001Test@55b53d44]" name="createNewLeadBySelectingDifferrentLeadSourceFromDropDown" class="leads.TC_001Test"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2021-05-17T19:44:00 IST" name="Default test" finished-at="2021-05-17T19:45:38 IST" duration-ms="97853">
+      <class name="leads.TC_001Test">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:leads.TC_001Test@55b53d44]" started-at="2021-05-17T19:44:00 IST" name="openApplication" finished-at="2021-05-17T19:44:31 IST" duration-ms="31755" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome is launching successfully]]>
+            </line>
+            <line>
+              <![CDATA[Window is maximized successfully]]>
+            </line>
+            <line>
+              <![CDATA[Login page is displayed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:leads.TC_001Test@55b53d44]" started-at="2021-05-17T19:44:32 IST" name="loginToApplication" finished-at="2021-05-17T19:44:45 IST" duration-ms="13816" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Homepage is displayed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="createNewLeadBySelectingDifferrentLeadSourceFromDropDown()[pri:0, instance:leads.TC_001Test@55b53d44]" started-at="2021-05-17T19:44:45 IST" name="createNewLeadBySelectingDifferrentLeadSourceFromDropDown" finished-at="2021-05-17T19:45:34 IST" duration-ms="48525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewLeadBySelectingDifferrentLeadSourceFromDropDown -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:leads.TC_001Test@55b53d44]" started-at="2021-05-17T19:45:34 IST" name="logoutFromApplication" finished-at="2021-05-17T19:45:36 IST" duration-ms="2593" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[user is logged out successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="CloseApp()[pri:0, instance:leads.TC_001Test@55b53d44]" started-at="2021-05-17T19:45:36 IST" name="CloseApp" finished-at="2021-05-17T19:45:38 IST" duration-ms="1111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseApp -->
+      </class> <!-- leads.TC_001Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

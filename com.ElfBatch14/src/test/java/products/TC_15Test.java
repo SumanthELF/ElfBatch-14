@@ -1,19 +1,23 @@
 package products;
 
 import org.testng.Assert;
-import org.testng.IRetryAnalyzer;
 import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericLibrary.BaseTest;
+import genericLibrary.IRetryAnalyserImplementation;
 import pomRepository.HomePage;
 import pomRepository.ProductsPage;
 
 
 @Listeners(genericLibrary.ListenerImplementation.class)
+
+/*
+ * @Author CHETHAN KUMAR M N
+ */
 public class TC_15Test extends BaseTest {
-	@Test(groups="smoke",retryAnalyzer = IRetryAnalyzer.class)
+	@Test(groups="smoke",retryAnalyzer = IRetryAnalyserImplementation.class)
 	public void goToExistingProductPageAndNevigateToForwardTriangleImage() {
 
 		//step3: HomePage Verification
