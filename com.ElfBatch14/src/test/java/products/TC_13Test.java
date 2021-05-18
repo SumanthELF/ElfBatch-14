@@ -1,20 +1,22 @@
 package products;
 
 import org.testng.Assert;
-import org.testng.IRetryAnalyzer;
 import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericLibrary.BaseTest;
+import genericLibrary.IRetryAnalyserImplementation;
 import pomRepository.HomePage;
 import pomRepository.ProductsPage;
 
-
-
 @Listeners(genericLibrary.ListenerImplementation.class)
+
+/*
+ * @Author CHETHAN KUMAR M N
+ */
 public class TC_13Test extends BaseTest {
-	@Test(groups="adhok",retryAnalyzer = IRetryAnalyzer.class)
+	@Test(groups="adhok",retryAnalyzer = IRetryAnalyserImplementation.class)
 	public void goToExistingProductPageAndDelete() {
 		//step3: HomePage Verification
 		//=========================================================================================
