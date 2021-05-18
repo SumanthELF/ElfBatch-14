@@ -8,7 +8,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-public class ListenerImplementation extends Basetest implements ITestListener {
+public class ListenerImplementation extends BaseTest implements ITestListener {
 	public void onFinish(ITestContext arg0) {					
 		Reporter.log("onFinish",true);				
 

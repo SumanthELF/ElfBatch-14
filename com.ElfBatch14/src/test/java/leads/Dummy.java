@@ -1,4 +1,4 @@
-package pomRepository;
+package leads;
 
 public class Dummy {
 

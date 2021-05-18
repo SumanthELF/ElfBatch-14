@@ -1,4 +1,4 @@
-package genericLibrary;
+package invoice;
 
 public class Dummy {
 
