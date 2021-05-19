@@ -33,7 +33,7 @@ public class BaseTest implements IAutoConstants {
 	public ExcelUtil excel;
 	public WebDriverUtil webUtil;
 	public SelectUtil select;
-//	public ActionsUtil actions;
+	public ActionsUtil actions;
 	public String parent;
 
 	@Parameters("browser")
@@ -55,6 +55,7 @@ public class BaseTest implements IAutoConstants {
 		driver.manage().window().maximize();
 		Reporter.log("Window is maximized successfully",true);
 		data=new PropertyFileUtil();
+		select = new SelectUtil();
 		loginpage=new LoginPage(driver);
 		homepage=new HomePage(driver);
 		contactpage=new ContactPage(driver);
