@@ -6,8 +6,6 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import genericLibrary.BaseTest;
-import pomRepository.ContactPage;
-import pomRepository.CreateNewContactPage;
 
 /*
  * @author Rekha V
@@ -29,28 +27,26 @@ public class Tc_10Test extends BaseTest{
 		//		naviagate to create new Contact page by click on + image
 		//		============================================================================================================================================================
 
-		ContactPage contactPage=new ContactPage(driver);
-		contactPage.getPlusImage().click();
+		contactpage.getPlusImage().click();
 		String expectedtitle = "Creating New Contact";
-		String actualTitle = contactPage.getContactInformation().getText();
+		String actualTitle = contactpage.getContactInformation().getText();
 		Assert.assertEquals(actualTitle, expectedtitle, "Creating New Contact should not be display");
 		Reporter.log("Creating New Contact should be display",true);
 
 		//		Create a contact with mandatory fields and select assigned to Group as a Marketing group form dropdown and save
 		//		============================================================================================================================================================
 
-		CreateNewContactPage createNewContact = new CreateNewContactPage(driver);
 		String expectedLastName = excel.stringCellValue(EXCEL_PATH,"Contacts",9,0);
-		createNewContact.getLastname().clear();
-		createNewContact.getLastname().sendKeys(expectedLastName);
-		String actualResult = createNewContact.getLastname().getAttribute("value");
+		createnewcontactpage.getLastname().clear();
+		createnewcontactpage.getLastname().sendKeys(expectedLastName);
+		String actualResult = createnewcontactpage.getLastname().getAttribute("value");
 		Assert.assertEquals(actualResult, expectedLastName,"Expected last Name should not be display");
 		Reporter.log("Expected Last Name Should be Display",true);
-		createNewContact.getAssigntyperadiobutton().click();
-		WebElement groupdropdown = createNewContact.getDropdown();
+		createnewcontactpage.getAssigntyperadiobutton().click();
+		WebElement groupdropdown = createnewcontactpage.getDropdown();
 		select.SelectElement(groupdropdown,"Marketing Group");
 		Reporter.log("Expected Drop Down is Selected",true);
-		createNewContact.getButton().click();
+		createnewcontactpage.getButton().click();
 		Reporter.log("Contact Should be Saved Successully",true);	
 	}
 }
