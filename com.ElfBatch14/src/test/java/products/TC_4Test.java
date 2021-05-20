@@ -13,7 +13,7 @@ import genericLibrary.BaseTest;
 
 public class TC_4Test extends BaseTest {
 	@Test
-	public void CreateProductWithOutActive() {
+	public void CreateProductWithOutActive() throws Exception {
 //		Assert.assertEquals("Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM",driver.getTitle(),"Home page is not displayed");
 //		Reporter.log("Home page is displayed",true);
 
@@ -31,7 +31,7 @@ public class TC_4Test extends BaseTest {
 		Reporter.log("new Product page is displayed",true);
 
 		//create a Product and save
-		createProduct.getProductName().sendKeys("Pendrive");
+		createProduct.getProductName().sendKeys(excel.stringCellValue(EXCEL_PATH,"products",0,1));
 		 driver.findElement(By.name("discontinued")).click();
 		createProduct.getSaveButton().click();
 		Assert.assertEquals("Administrator - Products - vtiger CRM 5 - Commercial Open Source CRM",driver.getTitle(),"Product is not added");

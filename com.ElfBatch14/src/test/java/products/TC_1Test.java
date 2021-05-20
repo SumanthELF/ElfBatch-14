@@ -13,7 +13,7 @@ import genericLibrary.BaseTest;
 
 public class TC_1Test extends BaseTest {
 	@Test
-	public void CreateProduct() {
+	public void CreateProduct() throws Exception {
 		Assert.assertEquals("Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM",driver.getTitle(),"Home page is not displayed");
 		Reporter.log("Home page is displayed",true);
 		
@@ -32,7 +32,7 @@ public class TC_1Test extends BaseTest {
 
 
 		//create a Product and save
-		createProduct.getProductName().sendKeys("Book");
+		createProduct.getProductName().sendKeys(excel.stringCellValue(EXCEL_PATH,"products",0,0));
 		createProduct.getSaveButton().click();
 		Assert.assertEquals("Administrator - Products - vtiger CRM 5 - Commercial Open Source CRM",driver.getTitle(),"Product is not added");
 		Reporter.log("Product is added successfully",true);
