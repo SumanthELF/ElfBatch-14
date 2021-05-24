@@ -14,9 +14,9 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import POMRepository.HomePage;
-import POMRepository.ProductPage;
-import genericLibraries.BaseTest;
+import genericLibrary.BaseTest;
+import pomRepository.HomePage;
+import pomRepository.ProductsPage;
 
 @SuppressWarnings("unused")
 public class Tc_09Test extends BaseTest{
@@ -31,11 +31,11 @@ public class Tc_09Test extends BaseTest{
 		//Place the mouse cursor on "Product" and click on Product link
 		//=======================================================================================
 		HomePage homepage = new HomePage(driver);
-		homepage.getproducts().click();
+		homepage.getProducts().click();
 
 		//naviagate to "create new Product"page by click on "+" image
 		//=======================================================================================
-		ProductPage productpage = new ProductPage(driver);
+		ProductsPage productpage = new ProductsPage(driver);
 		productpage.getcreateproduct().click();
 
 		Assert.assertEquals(driver.getTitle(),"Administrator - Products - vtiger CRM 5 - Commercial Open Source CRM","Product page is 'Not' displayed");

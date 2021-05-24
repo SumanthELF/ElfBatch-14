@@ -8,9 +8,9 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import POMRepository.HomePage;
-import POMRepository.ProductPage;
-import genericLibraries.BaseTest;
+import genericLibrary.BaseTest;
+import pomRepository.HomePage;
+import pomRepository.ProductsPage;
 
 public class Tc_08Test extends BaseTest{
 	@Test
@@ -23,24 +23,24 @@ public class Tc_08Test extends BaseTest{
 		//Place the mouse cursor on "Product" and click on Product link
 		//=======================================================================================
 		HomePage homepage = new HomePage(driver);
-		homepage.getproducts().click();
+		homepage.getProducts().click();
 
 		//naviagate to "create new Product"page by click on "+" image
 		//=======================================================================================
-		ProductPage productpage = new ProductPage(driver);
+		ProductsPage productpage = new ProductsPage(driver);
 		productpage.getcreateproduct().click();
 
 		Assert.assertEquals(driver.getTitle(),"Administrator - Products - vtiger CRM 5 - Commercial Open Source CRM","Product page is 'Not' displayed");
 		Reporter.log(" 'Product' List page is display",true);
 
-		genericLibraries.ExcelLibUtil excel = new genericLibraries.ExcelLibUtil();   		
-		String productname = excel.getStringCellValue(EXCEL_PATH,"Sheet1",7,0);
-		String productcode = excel.getStringCellValue(EXCEL_PATH,"Sheet1",7,1);
-		String commissionrate =excel.getStringCellValue(EXCEL_PATH,"Sheet1",7,2);
-		String unit_price = excel.getStringCellValue(EXCEL_PATH,"Sheet1",7,3);
-		String qty_per_unit = excel.getStringCellValue(EXCEL_PATH,"Sheet1",7,4);
-		String qtyinstock = excel.getStringCellValue(EXCEL_PATH,"Sheet1",7,5);
-		String description = excel.getStringCellValue(EXCEL_PATH,"Sheet1",7,6);
+		genericLibrary.ExcelUtil excel = new genericLibrary.ExcelUtil();   		
+		String productname = excel.stringCellValue(EXCEL_PATH,"Sheet1",7,0);
+		String productcode = excel.stringCellValue(EXCEL_PATH,"Sheet1",7,1);
+		String commissionrate =excel.stringCellValue(EXCEL_PATH,"Sheet1",7,2);
+		String unit_price = excel.stringCellValue(EXCEL_PATH,"Sheet1",7,3);
+		String qty_per_unit = excel.stringCellValue(EXCEL_PATH,"Sheet1",7,4);
+		String qtyinstock = excel.stringCellValue(EXCEL_PATH,"Sheet1",7,5);
+		String description = excel.stringCellValue(EXCEL_PATH,"Sheet1",7,6);
 		productpage.getproductname().sendKeys(productname);
 		productpage.getproductcode().sendKeys(productcode);
 		productpage.getcommissionrate().sendKeys(commissionrate);
@@ -51,7 +51,7 @@ public class Tc_08Test extends BaseTest{
 		Reporter.log("'Creating New Product' page is display",true);
 
 
-		//Take the crossor on "Usage unit"drop down
+		//Take the cursor on "Usage unit"drop down
 		//=======================================================================================
 		productpage.getusageunit().click();
 		WebElement element = driver.findElement(By.name("usageunit"));

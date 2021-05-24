@@ -43,14 +43,14 @@ public class Tc_06Test extends BaseTest{
 		
 		//Enter mandatory values & click on "Vendor Name" Look-UP image
 		//=======================================================================================
-		genericLibraries.ExcelLibUtil excel = new genericLibraries.ExcelLibUtil();   		
-		String productname = excel.getStringCellValue(EXCEL_PATH,"Sheet1",5,0);
-		String productcode = excel.getStringCellValue(EXCEL_PATH,"Sheet1",5,1);
-		String commissionrate =excel.getStringCellValue(EXCEL_PATH,"Sheet1",5,2);
-		String unit_price = excel.getStringCellValue(EXCEL_PATH,"Sheet1",5,3);
-		String qty_per_unit = excel.getStringCellValue(EXCEL_PATH,"Sheet1",5,4);
-		String qtyinstock = excel.getStringCellValue(EXCEL_PATH,"Sheet1",5,5);
-		String description = excel.getStringCellValue(EXCEL_PATH,"Sheet1",5,6);
+		genericLibrary.ExcelUtil excel = new genericLibrary.ExcelUtil();   		
+		String productname = excel.stringCellValue(EXCEL_PATH,"Sheet1",5,0);
+		String productcode = excel.stringCellValue(EXCEL_PATH,"Sheet1",5,1);
+		String commissionrate =excel.stringCellValue(EXCEL_PATH,"Sheet1",5,2);
+		String unit_price = excel.stringCellValue(EXCEL_PATH,"Sheet1",5,3);
+		String qty_per_unit = excel.stringCellValue(EXCEL_PATH,"Sheet1",5,4);
+		String qtyinstock = excel.stringCellValue(EXCEL_PATH,"Sheet1",5,5);
+		String description = excel.stringCellValue(EXCEL_PATH,"Sheet1",5,6);
 		productpage.getproductname().sendKeys(productname);
 		productpage.getproductcode().sendKeys(productcode);
 		productpage.getcommissionrate().sendKeys(commissionrate);
