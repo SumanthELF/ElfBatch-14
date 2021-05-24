@@ -4,9 +4,9 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTests;
+import genericLibrary.BaseTest;
 
-public class TC_2Test extends BaseTests{
+public class TC_2Test extends BaseTest{
 
 
 	@Test(groups="one")

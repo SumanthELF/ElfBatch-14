@@ -14,12 +14,12 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTests;
+import genericLibrary.BaseTest;
 import pomRepository.HomePage;
 import pomRepository.ProductsPage;
 
 @SuppressWarnings("unused")
-public class Tc_09Test extends BaseTests{
+public class Tc_09Test extends BaseTest{
 	@Test
 	public void GoToProductCreatingPageAndNevigateToProductImageInformation() throws Exception{
 

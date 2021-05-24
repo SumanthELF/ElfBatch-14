@@ -4,12 +4,12 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTests;
+import genericLibrary.BaseTest;
 
 import pomRepository.OrganizationPage;
 import pomRepository.SelectOrganizationPage;
 
-public class TC_08Test extends BaseTests{
+public class TC_08Test extends BaseTest{
 	@Test
 	public void CheckWhileCreatingNewOrganizationEmailOptOutSelectOptionIsEnabledOrNot() throws Exception
 	{

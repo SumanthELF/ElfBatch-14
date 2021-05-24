@@ -8,12 +8,12 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTests;
+import genericLibrary.BaseTest;
 
 import pomRepository.HomePage;
 import pomRepository.OrganizationPage;
 
-public class TC_06Test extends BaseTests{
+public class TC_06Test extends BaseTest{
 	@Test
 	public void CreateOrganizationWithMembersOf() throws Exception
 	{

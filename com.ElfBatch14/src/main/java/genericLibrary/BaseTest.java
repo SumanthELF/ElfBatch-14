@@ -24,7 +24,7 @@ import pomRepository.ProductListPage;
 /*
  *Author DevikaPatel
  */
-public class BaseTests implements IAutoConstants {
+public class BaseTest implements IAutoConstants {
 	public static WebDriver driver;
 	public LoginPage loginpage;
 	public HomePage homepage;

@@ -5,7 +5,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTests;
+import genericLibrary.BaseTest;
 import genericLibrary.IRetryAnalyserImplementation;
 import pomRepository.HomePage;
 import pomRepository.ProductsPage;
@@ -15,7 +15,7 @@ import pomRepository.ProductsPage;
 /*
  * @Author CHETHAN KUMAR M N
  */
-public class TC_13Test extends BaseTests {
+public class TC_13Test extends BaseTest {
 	@Test(groups="adhok",retryAnalyzer = IRetryAnalyserImplementation.class)
 	public void goToExistingProductPageAndDelete() {
 		//step3: HomePage Verification

@@ -5,9 +5,9 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 
-import genericLibrary.BaseTests;
+import genericLibrary.BaseTest;
 
-public class TC_11Test extends BaseTests {
+public class TC_11Test extends BaseTest {
 	
 	@Test(groups="one")
 	public void createContact11() throws Exception {
