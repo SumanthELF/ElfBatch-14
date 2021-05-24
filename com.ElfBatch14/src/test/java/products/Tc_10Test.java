@@ -6,11 +6,11 @@ import org.testng.Reporter;
 
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 import pomRepository.HomePage;
 import pomRepository.ProductsPage;
 
-public class Tc_10Test extends BaseTest{
+public class Tc_10Test extends BaseTests{
 	@Test
 	public void GoToProductCreatingPageFillAllTheFieldsAndCancel() throws Exception{
 

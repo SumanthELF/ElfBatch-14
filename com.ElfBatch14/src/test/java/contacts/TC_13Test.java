@@ -8,9 +8,9 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 
-public class TC_13Test  extends BaseTest {
+public class TC_13Test  extends BaseTests {
 
 	@Test(groups="casetwo")
 

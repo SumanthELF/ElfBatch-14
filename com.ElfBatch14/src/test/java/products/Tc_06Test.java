@@ -13,13 +13,13 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 import pomRepository.HomePage;
 import pomRepository.ProductsPage;
 
 
 
-public class Tc_06Test extends BaseTest{
+public class Tc_06Test extends BaseTests{
 	@Test
 	public void GoToProductCreatingPageAndNevigateToVendorImage() throws Exception{
 

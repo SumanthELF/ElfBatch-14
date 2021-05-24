@@ -5,10 +5,10 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 
 
-public class TC_1Test extends BaseTest{
+public class TC_1Test extends BaseTests{
 
 	@Test(groups="one")
 

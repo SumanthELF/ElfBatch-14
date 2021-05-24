@@ -1,5 +1,5 @@
 package leads;
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 import genericLibrary.ExcelUtil;
 import genericLibrary.SelectUtil;
 
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 /*
  * @author Shraddha Bagoji
  */
-public class TC_001Test extends BaseTest{
+public class TC_001Test extends BaseTests{
 
 
 	@Test(groups = "smoke")

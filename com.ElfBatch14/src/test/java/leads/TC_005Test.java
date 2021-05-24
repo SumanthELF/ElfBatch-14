@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 import genericLibrary.ExcelUtil;
 import genericLibrary.SelectUtil;
 import pomRepository.LeadsPage;
@@ -12,7 +12,7 @@ import pomRepository.LeadsPage;
 /*
  * @author Shraddha Bagoji
  */
-public class TC_005Test extends BaseTest {
+public class TC_005Test extends BaseTests {
 	
 	@Test(groups="functional")
 	public void createNewLeadByEnteringMandatoryFields() throws Exception{

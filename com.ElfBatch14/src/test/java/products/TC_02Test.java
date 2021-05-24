@@ -9,9 +9,9 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 
-public class TC_02Test extends BaseTest{
+public class TC_02Test extends BaseTests{
 
 	@Test
 	public void CreateProductWithOutMaindatoryField() {

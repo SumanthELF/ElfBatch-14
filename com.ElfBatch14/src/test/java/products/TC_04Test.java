@@ -9,9 +9,9 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 
-public class TC_04Test extends BaseTest {
+public class TC_04Test extends BaseTests {
 	@Test
 	public void CreateProductWithOutActive() throws Exception {
 //		Assert.assertEquals("Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM",driver.getTitle(),"Home page is not displayed");

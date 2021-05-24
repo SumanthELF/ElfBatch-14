@@ -3,7 +3,7 @@ package leads;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 import pomRepository.HomePage;
 import pomRepository.LeadsPage;
 
@@ -12,7 +12,7 @@ import org.testng.Assert;
 /*
  * @author Shraddha Bagoji
  */
-public class TC_003Test extends BaseTest {
+public class TC_003Test extends BaseTests {
 
 	@Test(groups="smoke")
 	public void blankFieldsAndSave() {

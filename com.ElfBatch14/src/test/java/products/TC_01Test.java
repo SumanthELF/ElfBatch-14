@@ -8,10 +8,10 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 
 
-public class TC_01Test extends BaseTest {
+public class TC_01Test extends BaseTests {
 	@Test
 	public void CreateProduct() throws Exception {
 		Assert.assertEquals("Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM",driver.getTitle(),"Home page is not displayed");

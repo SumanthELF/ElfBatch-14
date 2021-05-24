@@ -3,13 +3,13 @@ package leads;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 import pomRepository.HomePage;
 import pomRepository.LeadsPage;
 /*
  * @author Shraddha Bagoji
  */
-public class TC_002Test extends BaseTest {
+public class TC_002Test extends BaseTests {
 	@Test(groups="functional")
 	public void blankFieldsAndCancel() {
 		//step3:home page is dispalyed

@@ -2,7 +2,7 @@ package leads;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import genericLibrary.BaseTest;
+import genericLibrary.BaseTests;
 import genericLibrary.ExcelUtil;
 import genericLibrary.SelectUtil;
 import pomRepository.HomePage;
@@ -12,7 +12,7 @@ import pomRepository.LeadsPage;
  * Author SHRADDHABAGOJI
  * 
  */
-public class TC_004Test extends BaseTest {
+public class TC_004Test extends BaseTests {
 	@Test(groups="functional")
 	public void deleteALeadFromLeads() throws Exception {
 		homepage=new HomePage(driver);
