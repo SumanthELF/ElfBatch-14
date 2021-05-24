@@ -16,8 +16,10 @@ import org.testng.annotations.Parameters;
 import pomRepository.LeadsPage;
 import pomRepository.ContactPage;
 import pomRepository.CreateNewContactPage;
+import pomRepository.CreateNewProductPage;
 import pomRepository.HomePage;
 import pomRepository.LoginPage;
+import pomRepository.ProductListPage;
 
 /*
  *Author DevikaPatel
@@ -33,6 +35,8 @@ public class BaseTest implements IAutoConstants {
 	public ExcelUtil excel;
 	public WebDriverUtil webUtil;
 	public SelectUtil select;
+	public CreateNewProductPage createProduct;
+	public ProductListPage productList;
 //	public ActionsUtil actions;
 	public String parent;
 
@@ -59,6 +63,9 @@ public class BaseTest implements IAutoConstants {
 		homepage=new HomePage(driver);
 		contactpage=new ContactPage(driver);
 		createnewcontactpage=new CreateNewContactPage(driver);
+		productList=new ProductListPage(driver);
+		createProduct=new CreateNewProductPage(driver);
+		
 		excel=new ExcelUtil();
 		webUtil=new WebDriverUtil(driver);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
